@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" type="image/png" href="img/chinois.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Portrait chinois Anaïs MICHEL</title>
+
+</head>
+<body>
+
+    <a class="btn-haut" href="#top">
+        <img src="img/fleche-haut.png">
+    </a>
+    
+    <section class="debut">
+        <!-- POP UP INFORMATIONS -->
+        <img class="infos" src="img/info2.png">
+
+            <div class="btn-info">
+                <h6>Qu'est ce qu'un portrait chinois ? </h6>
+                <p>Un portrait chinois est un jeu permettant de connaitre certains aspects de la personnalité d'une personne ou ses goûts et préférences personnelles, à travers un questionnaire basé sur l'identification à des objets, éléments ou personnes.</p>
+                <img class="annuler" src="img/croix.png">
+            </div>
+        
+        <!-- PREMIERE PAGE AVEC TITRE -->
+        <p class="prenom">Anaïs MICHEL </p>
+        <h1>Mon Portrait chinois </h1>
+        <a href="#sec0" id="btn"> DÉCOUVRIR </a>
+    </section>
+
+
+
+    <!--Toutes mes analogies-->
+    <div class="liste-analogies"></div>
+
+
+    <!--Formulaire -->
+    <section class="formu" id="sec7">
+        <h3>Ajouter votre propre thématique !</h3>
+        <form action="" method="post">
+
+            <p><label for="mail">Mail<br><input type="email" name="mail" id="mail".value placeholder="(robert123@gmail.com)" required></label></p>
+
+            <p><label for="analogie">Si j'étais...<br><input type="text" name="analogie" id="analogie".value placeholder="(exemple: une saison, un fruit, etc ...)" required></label></p>
+            
+
+            <p><label for="valeurAnalogie">Je serais...<br><input type="text" name="valeurAnalogie" id="valeurAnalogie" placeholder="(exemple: l'été, une pomme, etc ...)" required></label></p>
+
+            
+            <p><label for="image" >Image :<br><input type="link" name="image" id="image" placeholder="Url de l'image" required></label></p>
+
+
+            <p><label for="explication">Explications:<br><textarea name="explication" id="explication" placeholder="(exemple: été car c'est ma saison préféré ...)" rows="5" cols="35"></textarea></label></p>
+            
+
+            <p class="envoi"><label><input type="button" value="Envoyer et Créer" ></label></p>
+            
+
+        </form>
+    </section>
+
+    <!--Ajout analogie-->
+    <div id="secajout" class="ajout"></div>
+
+    
+
+    
+
+
+    <!--Mentions légales-->
+    <section>
+    <footer>
+        <h4>Mentions légales</h4>
+        
+
+        <div class="volet-invisible">
+            <div class="centre">
+                <p>Site réalisé par Anaïs MICHEL dans le cadre de la formation BUT MMI à Champs sur Marne.</p>
+                <p>Encadrement par Gaëlle Charpentier, Philipe Gambette et Matthieu Berthet</p>
+                <p class="droit">©2023 Tous droits réservés par Anaïs MICHEL</p><br>
+
+            </div>
+
+            <div id="col">
+
+                <div class="mentionsleg heber" id="col1">
+                    <h5>Hébergement</h5>
+                    <p>Université Gustave Eiffel<br>
+                        2 rue Albert Einstein, 77420,<br>
+                        Champs sur Marne
+                    </p><br>
+                </div>
+
+                <div class="mentionsleg donnees" id="col2">
+                    <h5>Collecte des données personnelles</h5>
+                    <p>Pour toute question relative à la collecte et au traitement de vos données personnelles par le site web, vous pouvez contacter le responsable de la portection des données du projet : philipe.gambette@univ-eiffel.fr
+                    Les fichiers détenues par l'UPEM qui comportent vos données à caractère personnel ne seront jamais transmis à des tiers et ne feront jamais l'objet d'une commercialisation.
+                    Les données seront supprimées pendant l'été 2023.
+                    </p>
+                </div>
+
+                <div class="mentionsleg imguse" id="col3">
+                    <h5>Images utilisées</h5>
+                        <p>
+                        <a href="https://unsplash.com/fr/photos/ePpaQC2c1xA">montagne.jpg</a> <br>
+                        <a href="https://unsplash.com/fr/photos/e4ING8JYKgI">renard.jpg</a> <br>
+
+                        <a href="https://www.rawpixel.com/image/6479599/png-sticker-public-domain">piano.png</a> <br>
+
+                        <a href="https://pixabay.com/images/id-309212/">saphir.png</a> <br>
+
+                        <a href="https://unsplash.com/fr/photos/fd4KegLUgOA">cerisier.jpg</a><br>
+
+                        <a href="https://unsplash.com/fr/photos/iftBhUFfecE">vague.jpg</a><br>
+
+                        <a href="https://www.flaticon.com/fr/icone-gratuite/fleche-vers-le-bas_7708981?term=fleche+bas&page=1&position=46&origin=search&related_id=7708981">fleche-bas.png</a><br>
+
+                        <a href="https://www.flaticon.com/fr/icone-gratuite/angle-de-la-fleche-vers-le-haut_54817?term=fleche+haut&page=1&position=3&origin=search&related_id=54817">fleche-haut.png</a>
+
+                        </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

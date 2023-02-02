@@ -1,0 +1,367 @@
+*,*::after,::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+}
+
+body{
+    margin: 0px;
+    font-family: 'PT Serif', serif;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+/* PAGE DE DEBUT */
+.debut{
+    background-image: url("img/ciel2.jpg");
+    background-size: cover;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 150px;
+    
+}
+
+.prenom{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* POP UP INFOS */
+.infos{
+    width: 30px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.btn-info{
+    display: inline-block;
+    color: #ffffff;
+    text-align: justify;
+    display: none;
+    background-color:rgba(0, 0,0 , 0.8);
+    padding: 20px;
+    max-width:500px;
+    height: 300px;
+    z-index: 1;
+    left:30%;
+    position:absolute;
+    align-items: center;
+    
+}
+
+.btn-info h6{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.annuler{
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+
+}
+
+/* Personalistion de la scrollbar  */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: black;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    box-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 30px white,
+    0 0 50px white,
+    0 0 60px white;
+    border-radius: 20px;
+    height: 100px;
+}
+
+
+/* Titre mon portrait chinois */
+h1 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    z-index: -1;
+
+}
+
+/* Bouton découvrir */
+#btn{
+    text-decoration: none;
+    display:inline-block;
+    position: absolute;
+    left: 45%;
+    border-style: solid;
+    padding: 13px ;
+    border-color: #ffffff;
+    color: #ffffff;
+    font-size: 1,2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    /* transform: translateY(100px); */
+}
+
+/* BOUTON BAS */
+.bas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bas img{
+    width:50px;
+    color: white;
+}
+
+
+/* BOUTON RETOUR VERS HAUT */
+
+.btn-haut img{
+    position: fixed;
+    left:25px;
+    bottom:10px;
+    z-index: 1;
+    width: 30px;
+}
+
+/* MES SECTIONS */
+.sec{
+    height: 100vh;
+    max-width: 100%;
+    display: block; 
+    position: relative;
+    color: white;
+   
+}
+
+.sec:nth-child(odd) {
+    background-image: url("img/ciel\ violet2.jpg");
+    background-size: cover;
+    padding-top: 5px;
+}
+
+.sec:nth-child(even){
+    background-image: url("img/ciel2.jpg");
+    background-size: cover;
+    padding-top: 5px;
+}
+
+h2{
+    font-size:2.5rem ;
+    font-weight: 400;
+    text-align: center;
+}
+
+span{
+    font-weight:bold;
+    text-shadow: rgba(255, 255, 255, 0.925) 1px 0 10px;
+}
+
+.texte{
+    text-align: justify;
+    display: block;
+    margin: 150px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.images{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 20%;
+    
+} 
+
+.images:not(.images2, .images3){
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.79);
+}
+
+
+
+/* FORMULAIRE */
+
+.formu{
+    background-image: url("img/ciel2.jpg");
+    background-size: cover;
+    padding-top: 5px;
+    height: 100vh;
+    max-width: 100%;
+    
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+label{
+    color: black;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+    
+
+input{
+    display: block;
+    text-align: center;
+    width: 280px;
+    height: 35px;
+    border: solid 1px #9e9e9e;
+    margin: auto;
+    margin-top: 10px;
+}
+
+textarea{
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    border: solid 1px #9e9e9e;
+    margin: auto;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+}
+
+input:required{
+    border: solid red 1px;
+}
+
+input:required:valid{
+    border: solid green 1px;
+}
+
+
+input[type="button"]{
+    background-color:rgb(39, 39, 244) ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px rgba(0,0,0,0.73);
+    cursor: pointer;
+     
+}
+
+input[type="button"]:hover{
+    background-color:blueviolet ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px rgba(0,0,0,0.73);
+    cursor: pointer;
+}
+
+
+/* FOOTER ET MENTIONS LEGALES */
+
+
+
+h4{
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+.centre{
+    text-align: center;
+    line-height: 9px;
+}
+
+.droit{
+    font-size: small;
+}
+
+.mentionsleg{
+    width: fit-content;
+    display: inline;
+    top: 0%;
+    float: left;
+    margin: 0 40px;
+    text-align: justify;
+    
+}
+
+
+#col{
+    display: grid;
+    grid-template-columns: fit-content(1300px) fit-content(700px) 1fr;
+    grid-gap: 4px;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.imguse{
+    margin-right: 20px;
+}
+
+.heber{
+    margin-left: 60px;
+}
+
+.donnees{
+    margin-left: 70px;
+}
+
+.volet-invisible{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
